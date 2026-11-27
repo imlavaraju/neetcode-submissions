@@ -1,0 +1,30 @@
+from collections import Counter
+class Solution:
+    def sortArray(self, nums: List[int]) -> List[int]:
+        #bubble sort
+        is_swap = False
+        for i in range(len(nums)):
+            for j in range(0,len(nums)-i-1): 
+                if nums[j]>nums[j+1]:
+                    nums[j],nums[j+1]=nums[j+1],nums[j]
+                    is_swap = True
+            # if is_swap != True:
+            #     return nums
+        return nums
+
+
+        
+
+            
+                
+
+
+
+
+          
+                
+
+
+
+
+        
